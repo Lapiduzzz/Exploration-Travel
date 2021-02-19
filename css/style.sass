@@ -1,0 +1,969 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap')
+$color1: #ffffff
+$color2: #2a9c9d
+$color3: #1D6A6B
+$color4: #f36273
+$color5: #f7e293
+$color6: #fdb078
+$color7: #f0f0f0
+
+
+
+
+
+body
+  box-sizing: border-box
+  overflow-x: hidden
+a
+  text-decoration: none
+  color: $color4
+  &:hover
+    text-decoration: none
+    color: #f0ecec
+
+
+
+///////////////////////////////////////////////////   header   /////////////////////////////////////////////////////////
+
+
+.header
+  position: fixed
+  height: 110px
+  width: 100%
+  font-family: 'Russo One', sans-serif
+  transition: 1s ease
+  z-index: 9999
+  &:hover
+    background-color: $color4
+    .logo-svg
+      fill: $color1
+    a
+      color: $color1
+      &:hover
+        color: $color3
+    .search-svg
+      fill: $color1
+    .leng-svg
+      fill: $color1
+    .map-svg
+      fill: $color1
+    p
+      color: $color1
+
+
+.header-wrapper
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: space-between
+  transition: 1s ease
+  z-index: 9999
+  &:hover
+    background-color: $color4
+    .logo-svg
+      fill: $color1
+    a
+      color: $color1
+      &:hover
+        color: $color1
+    .search-svg
+      fill: $color1
+    .leng-svg
+      fill: $color1
+    .map-svg
+      fill: $color1
+    p
+      color: $color1
+
+
+
+.header-nav
+  display: flex
+  align-items: center
+  .logo-svg
+    width: 90px
+    height: 90px
+    fill: $color1
+    margin: 10px 60px
+    transition: 1s ease
+  .nav
+  .nav-item
+    align-self: center
+    padding: 40px 30px
+    font-size: 17px
+    height: 110px
+
+
+  a
+    color: $color1
+    transition: 1s ease
+    &:hover
+      color: $color4
+  .search-svg
+    width: 25px
+    height: 25px
+    fill: $color1
+    transition: 1s ease
+  .leng-svg
+    width: 25px
+    height: 25px
+    fill: $color1
+    transition: 1s ease
+
+
+
+.header-guide
+  margin: 0 60px
+  display: flex
+  .map-svg
+    width: 40px
+    height: 40px
+    fill: $color1
+    margin-right: 15px
+    transition: 1s ease
+
+  p
+    font-size: 12px
+    color: $color1
+    line-height: 0
+    align-self: flex-end
+    transition: 1s ease
+
+
+
+
+
+.header-scroll
+  background-color: $color1
+  .logo-svg
+    fill: $color4
+  a
+    color: $color4
+    &:hover
+      color: $color1
+  .search-svg
+    fill: $color4
+  .leng-svg
+    fill: $color4
+  .map-svg
+    fill: $color4
+  p
+    color: $color4
+
+
+
+
+
+
+.menu-pop
+  position: relative
+  top: 0
+  background-color: $color7
+  width: 100vw
+  padding: 5% 0
+
+  ul
+    position: relative
+    width: 60%
+    left: 20%
+    top: 50%
+    list-style: none
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    li
+      margin: 30px
+.m-form
+  margin: 0 60px
+  display: flex
+.m-search
+  height: 50px
+  width: 50vw
+.m-button
+  position: relative
+  text-decoration: none
+  text-align: center
+  font-size: 15px
+  background-color: transparent
+  border: 3px solid $color4
+  color: $color4
+  border-radius: 50px
+  padding: 5px 30px
+  left: 20%
+  top: 50%
+  animation: fadeIn
+  animation-duration: 3s
+
+
+
+
+.n1
+  color: $color3
+  position: absolute
+  transform: translatey(-200%)
+  transition: 0.5s
+
+.n2
+  color: $color3
+  position: absolute
+  transform: translatey(-200%)
+  transition: 0.5s
+.n3
+  color: $color3
+  position: absolute
+  transform: translatey(-200%)
+  transition: 0.5s
+.n4
+  color: $color3
+  position: absolute
+  transform: translatey(-200%)
+  transition: 0.5s
+.n5
+  color: $color3
+  position: absolute
+  transform: translatey(-200%)
+  transition: 0.5s
+.n6
+  color: $color3
+  position: absolute
+  transform: translatey(-200%)
+  transition: 0.5s
+
+.nav-active
+  position: relative
+  transform: translateX(0)
+  transition: 0.5s
+  z-index: 10
+  animation: fadeIn
+  animation-duration: 0.5s
+.nav-line1,
+.nav-line2,
+.nav-line3,
+.nav-line4,
+.nav-line5,
+.nav-line6
+  height: 2px
+  border: none
+  background-color: $color1
+  margin: 0
+  width: 0
+  transition: 1s
+.nav-line-active
+  width: 100%
+  transition: 1s
+
+
+
+
+
+
+
+.burger-menu
+  position: absolute
+  margin-top: 80px
+  width: 100%
+  z-index: 100
+  background-color: $color5
+  transform: translateY(-200%)
+  transition: 0.5s
+  .burger-menu-top
+    background-color: $color5
+    font-family: 'Russo One', sans-serif
+    padding-bottom: 30px
+  .b-srch
+    .b-search
+      position: relative
+      height: 5vh
+      width: 90%
+      left: 5%
+      background-color: $color5
+      border-left: none
+      border-right: none
+      border-top: none
+  .b-ptg,
+  .b-tgd,
+  .b-exp,
+  .b-pyt,
+  .b-len
+    left: 5%
+    font-size: 20px
+    margin: 60px 30px
+    .b-ul-ptg,
+    .b-ul-tgd,
+    .b-ul-exp,
+    .b-ul-pyt,
+    .b-ul-len
+      display: none
+    li
+      font-size: 17px
+      list-style: none
+      font-family: 'Passion One', cursive
+      margin: 30px
+  .burger-menu-footer
+    background-color: $color1
+    p
+      font-family: 'Passion One', cursive
+      margin: 0px 30px
+      font-size: 20px
+      color: $color6
+      padding: 15px 0
+
+.burger-menu-active
+  transform: translateY(0)
+  transition: 0.5s
+
+
+.burger
+  display: none
+
+
+////////////////////////////////////////////   header   ////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////   main   ///////////////////////////////////////////////////////////////////
+
+
+.main
+  height: 140vh
+  width: 100vw
+  background-image: url("../img/main.jpg")
+  background-position: center
+  background-size: cover
+
+.main-heading
+  font-size: 30vw
+  text-align: center
+  margin-top: 30vh
+  color: $color1
+  font-family: 'Gochi Hand', cursive
+
+.quote
+  position: relative
+  height: 70vh
+  background-color: $color4
+  animation: fadeIn
+  animation-duration: 1s
+.blockquote
+  position: relative
+  width: 40%
+  left: 30%
+  top: 40%
+  animation: fadeInUp
+  animation-duration: 2s
+.mb-0
+  font-size: 40px
+  font-family: 'Eczar', serif
+  color: $color1
+.blockquote-footer
+  font-family: 'Nothing You Could Do', cursive
+  font-size: 25px
+  color: $color3
+
+
+
+
+
+
+
+////////////////////////////////////////////   main  ////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////   experiences   ///////////////////////////////////////////////////////////////////
+
+.experiences
+ position: relative
+.cont
+  position: relative
+  width: 80%
+  left: 10%
+.e-cont
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin: 60px 0
+
+  h3
+    font-size: 20px
+    font-family: 'Russo One', sans-serif
+    color: $color3
+    animation: fadeInLeft
+    animation-duration: 3s
+.arrows
+  animation: fadeInRight
+  animation-duration: 3s
+.prev,
+.next
+  height: 45px
+  width: 45px
+  margin: 15px 0 15px 15px
+  cursor: pointer
+  fill: $color6
+
+.experiences-wrapper
+  width: 100vw
+  margin-bottom: 60px
+  animation: fadeInUp
+  animation-duration: 2s
+.e-item
+  img
+    height: 50vh
+    width: 20vw
+.e-heading
+  margin: 15px
+  font-family: 'Passion One', cursive
+  color: $color6
+  font-size: 30px
+.written-by
+  margin: 15px
+  font-family: 'Old Standard TT', serif
+  color: $color2
+  font-size: 20px
+.e-text
+  margin: 15px
+  font-family: 'Old Standard TT', serif
+  color: $color3
+  font-size: 25px
+
+
+
+
+
+
+
+
+////////////////////////////////////////////   main  ////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////   itineraries   ///////////////////////////////////////////////////////////////////
+
+.itineraries
+  width: 100vw
+  background-color: $color6
+
+  animation: fadeInUp
+  animation-duration: 2s
+.i-cont
+  margin: 0
+  position: relative
+  width: 70%
+  left: 15%
+.itineraries-wrapper
+  padding-bottom: 60px
+.slick-cont
+.itineraries-item
+  background-color: $color1
+  display: flex
+.it-item-left
+  flex: 1
+  position: relative
+  animation: fadeInLeft
+  animation-duration: 1s
+  h3
+    margin: 60px
+    font-family: 'Old Standard TT', serif
+    color: $color2
+    font-size: 20px
+  h1
+    margin: 60px
+    font-family: 'Passion One', cursive
+    color: $color4
+    font-size: 40px
+
+  p
+    margin: 0 60px
+    font-family: 'Old Standard TT', serif
+    color: $color3
+    font-size: 25px
+.it-item-right
+  flex: 1
+  animation: fadeInRight
+  animation-duration: 1s
+  img
+    width: 100%
+.next-2,
+.prev-2
+  fill: $color1
+.num
+  position: absolute
+  font-size: 10vh
+  color: transparent
+  -webkit-text-stroke: 1px $color6
+  left: 40%
+  top: - 10%
+  font-family: 'Russo One', sans-serif
+
+button
+  text-decoration: none
+  text-align: center
+  font-size: 20px
+  background-color: transparent
+  border: 3px solid $color4
+  color: $color4
+  border-radius: 50px
+  padding: 15px 50px
+  margin: 60px
+  animation: fadeIn
+  animation-duration: 3s
+.button
+  border: 3px solid $color1
+  color: $color1
+  margin: 60px 0
+  animation: fadeInLeft
+  animation-duration: 3s
+
+
+
+////////////////////////////////////////////   itineraries  ////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////   other  ///////////////////////////////////////////////////////////////////
+
+.other
+  margin: 60px 0
+  p
+    font-family: 'Russo One', sans-serif
+    font-size: 15px
+    animation: fadeInUp
+    animation-duration: 1s
+.other-item
+  border-top: 3px solid $color4
+  display: flex
+  align-items: center
+  animation: fadeInUp
+  animation-duration: 1s
+  h1
+    flex: 3
+    margin: 30px
+    font-family: 'Passion One', cursive
+    color: $color6
+    font-size: 35px
+  p
+    flex: 4
+    margin: 30px 0
+    font-family: 'Old Standard TT', serif
+    color: $color3
+    font-size: 25px
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////   other  ////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////   ph-section ///////////////////////////////////////////////////////////////////
+
+.ph-section
+  width: 100vw
+  height: 200vh
+  background-color: $color2
+
+.ph-cont
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+
+
+.ph-left
+  transform: translateY(0)
+.ph-right
+  transform: translateY(20vw)
+.ph
+  position: relative
+  animation: fadeInUp
+  animation-duration: 1s
+  img
+    width: 30vw
+    margin: 60px
+.ph-heading
+  position: absolute
+  top: 0
+  left: -1%
+  margin: 100px 0
+  animation: fadeInLeft
+  animation-duration: 2s
+  h1
+    font-family: 'Passion One', cursive
+    color: $color1
+    font-size: 3.5vw
+    margin: 30px 0
+  .button-ph
+    color: white
+    margin: 30px 0
+    background-color: black
+    opacity: 0.8
+    border: none
+
+
+
+
+
+
+
+////////////////////////////////////////////   other  ////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////   stories   ///////////////////////////////////////////////////////////////////
+
+.stories
+  margin: 15% 0 5% 0
+  p
+    animation: fadeInUp
+    animation-duration: 1s
+
+
+
+
+
+
+////////////////////////////////////////////   stories   ////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////   footer   ///////////////////////////////////////////////////////////////////
+
+.footer
+  width: 100vw
+  background-color: #464443
+.footer-top
+  background-color: #e83a78
+  display: flex
+  justify-content: space-around
+  align-items: center
+  font-family: 'Passion One', cursive
+  color: $color1
+  font-size: 25px
+
+.f-t-left
+  display: flex
+  margin: 15px 0
+  animation: fadeInLeft
+  animation-duration: 1s
+  .map-svg
+    height: 40px
+    width: 40px
+    margin: 0 30px
+    fill: $color1
+.f-t-right
+  display: flex
+  margin: 15px 0
+  animation: fadeInRight
+  animation-duration: 1s
+  .email
+    height: 40px
+    width: 40px
+    margin: 0 30px
+    fill: $color1
+.footer-cont
+  display: flex
+  justify-content: space-around
+  align-items: center
+  animation: backInUp
+  animation-duration: 1s
+.footer-logo
+  flex: 1
+  text-align: center
+  .logo-svg
+    height: 20vh
+    margin: 60px 0
+    fill: $color6
+.footer-nav
+  flex: 1
+  display: flex
+  ul
+    list-style: none
+    margin-right: 60px
+    font-family: 'Russo One', sans-serif
+    color: $color5
+    font-size: 20px
+
+.footer-bot
+  text-align: center
+  padding: 60px
+  color: $color2
+  animation: fadeInUp
+  animation-duration: 1s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+////////////////////////////////////////////
+///////////////////////////////////
+///////////////////////////
+//////////////////
+///////////
+//////
+//
+
+
+@media screen and (max-width: 1420px)
+  .header-nav
+    .nav-item
+      align-self: center
+      padding: 40px 15px
+      font-size: 17px
+      height: 110px
+
+@media screen and (max-width: 1240px)
+  .header-nav
+    .nav-item
+     display: none
+  .header-guide
+    display: none
+  .burger
+    display: block
+    position: absolute
+    top: 0
+    right: 0
+    height: 70px
+    width: 100px
+    cursor: pointer
+    transition: 0.3s
+    z-index: 9999
+    animation: fadeInDown
+    animation-duration: 1.5s
+    .b-span
+      position: absolute
+      height: 3px
+      width: 25px
+      background-color: $color4
+      top: 50%
+      right: 10%
+      &::before
+        content: ''
+        position: absolute
+        top: -8px
+        background-color: $color4
+        height: 3px
+        width: 25px
+        transition: 0.3s
+      &::after
+        content: ''
+        position: absolute
+        top: 8px
+        background-color: $color4
+        height: 3px
+        width: 25px
+        transition: 0.3s
+    .burger-active
+      height: 0
+      &::before
+        transform: rotate(45deg)
+        top: 0
+      &::after
+        transform: rotate(-45deg)
+        top: 0
+    .burger-menu
+      display: block
+
+
+@media screen and (orientation: portrait)
+  .header
+    height: 70px
+    .logo-svg
+      width: 40px
+      height: 40px
+      margin: 18px 30px
+  .main
+    height: 100vh
+  .blockquote
+    width: 90%
+    left: 5%
+    top: 30%
+    text-align: center
+  .mb-0
+    font-size: 30px
+
+
+
+  .experiences
+    position: relative
+  .cont
+    position: relative
+    width: 100%
+    left: 0
+  .experiences-wrapper
+    width: 100vw
+    margin-bottom: 60px
+  .e-item
+    img
+      height: 50vh
+      width: 100vw
+  .e-heading
+    margin: 15px
+    font-size: 30px
+  .written-by
+    margin: 15px
+    font-size: 20px
+  .e-text
+    margin: 15px
+    font-size: 25px
+
+
+
+  .itineraries
+    width: 100vw
+  .i-cont
+    display: none
+    width: 100%
+    left: 0
+  .itineraries-wrapper
+    padding: 60px 0
+  .itineraries-item
+    flex-direction: column-reverse
+  .it-item-left
+    position: relative
+    h3
+      margin: 30px
+      font-size: 15px
+    h1
+      margin: 30px
+      font-size: 20px
+    p
+      margin: 30px
+      font-size: 20px
+    img
+      width: 100%
+  .num
+    display: none
+    position: absolute
+    font-size: 10vh
+    color: transparent
+    -webkit-text-stroke: 1px $color6
+    left: 40%
+    top: - 10%
+    font-family: 'Russo One', sans-serif
+  button
+    font-size: 20px
+    margin: 30px
+  .button
+    margin: 30px 0
+
+
+
+
+
+  .other
+    text-align: center
+    p
+      font-size: 15px
+  .other-item
+    flex-direction: column
+
+
+
+  .ph-section
+    height: 300vh
+  .ph-cont
+    flex-direction: column
+  .ph-left
+    transform: translateY(0)
+  .ph-right
+    transform: translateY(0)
+  .ph
+    margin: 60px 0
+    img
+      width: 100vw
+      margin: 0
+  .ph-heading
+    left: 5%
+    margin: 100px 0
+    h1
+      font-size: 10vw
+      margin: 30px 0
+
+
+
+
+  .footer-top
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    font-size: 20px
+  .f-t-left
+    margin: 15px 0
+    .map-svg
+      height: 30px
+      width: 30px
+      margin: 0 30px
+  .f-t-right
+    margin: 15px 0
+    .email
+      height: 30px
+      width: 30px
+      margin: 0 30px
+  .footer-cont
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    .logo-svg
+      height: 20vh
+      margin: 60px 0
+    ul
+      margin-right: 60px
+      font-size: 20px
+
+
+
+
+
+
+
